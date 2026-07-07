@@ -1,0 +1,34 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.2, pytest-9.1.1, pluggy-1.6.0 -- D:\Project\_csdiy\.venv-ml\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Project\networks\top-down-labs
+plugins: anyio-4.14.1, mpi-0.6, typeguard-4.5.2
+collecting ... collected 25 items
+
+tests/test_distance_vector.py::test_demo_converges_and_matches_reference PASSED [  4%]
+tests/test_distance_vector.py::test_known_shortest_costs PASSED          [  8%]
+tests/test_distance_vector.py::test_linear_chain PASSED                  [ 12%]
+tests/test_distance_vector.py::test_triangle_prefers_direct_when_cheaper PASSED [ 16%]
+tests/test_rdt.py::test_rdt30_stop_and_wait[0.0-0.0-0.0] PASSED          [ 20%]
+tests/test_rdt.py::test_rdt30_stop_and_wait[0.2-0.0-0.0] PASSED          [ 24%]
+tests/test_rdt.py::test_rdt30_stop_and_wait[0.0-0.2-0.0] PASSED          [ 28%]
+tests/test_rdt.py::test_rdt30_stop_and_wait[0.3-0.2-0.0] PASSED          [ 32%]
+tests/test_rdt.py::test_rdt30_stop_and_wait[0.2-0.2-0.2] PASSED          [ 36%]
+tests/test_rdt.py::test_go_back_n[0.0-0.0-0.0] PASSED                    [ 40%]
+tests/test_rdt.py::test_go_back_n[0.2-0.0-0.0] PASSED                    [ 44%]
+tests/test_rdt.py::test_go_back_n[0.3-0.1-0.0] PASSED                    [ 48%]
+tests/test_rdt.py::test_go_back_n[0.2-0.2-0.1] PASSED                    [ 52%]
+tests/test_rdt.py::test_selective_repeat[0.0-0.0-0.0] PASSED             [ 56%]
+tests/test_rdt.py::test_selective_repeat[0.2-0.0-0.0] PASSED             [ 60%]
+tests/test_rdt.py::test_selective_repeat[0.3-0.1-0.2] PASSED             [ 64%]
+tests/test_rdt.py::test_selective_repeat[0.25-0.2-0.2] PASSED            [ 68%]
+tests/test_rdt.py::test_empty_and_small_payloads PASSED                  [ 72%]
+tests/test_sockets.py::test_tcp_upper_echo PASSED                        [ 76%]
+tests/test_sockets.py::test_webserver_200_and_404 PASSED                 [ 80%]
+tests/test_sockets.py::test_webserver_handle_request_unit PASSED         [ 84%]
+tests/test_sockets.py::test_udp_pinger_no_loss PASSED                    [ 88%]
+tests/test_sockets.py::test_udp_pinger_with_loss PASSED                  [ 92%]
+tests/test_sockets.py::test_smtp_client_delivers_message PASSED          [ 96%]
+tests/test_sockets.py::test_proxy_miss_then_hit PASSED                   [100%]
+
+============================= 25 passed in 8.08s ==============================

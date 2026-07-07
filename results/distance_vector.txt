@@ -1,0 +1,51 @@
+Converged=True after 3 rounds
+
+Routing table for u:
+  to u: cost=0, next_hop=u
+  to v: cost=2, next_hop=v
+  to w: cost=4, next_hop=x
+  to x: cost=1, next_hop=x
+  to y: cost=2, next_hop=x
+  to z: cost=4, next_hop=x
+
+Routing table for v:
+  to u: cost=2, next_hop=u
+  to v: cost=0, next_hop=v
+  to w: cost=3, next_hop=w
+  to x: cost=2, next_hop=x
+  to y: cost=3, next_hop=x
+  to z: cost=5, next_hop=x
+
+Routing table for w:
+  to u: cost=4, next_hop=x
+  to v: cost=3, next_hop=v
+  to w: cost=0, next_hop=w
+  to x: cost=3, next_hop=x
+  to y: cost=4, next_hop=x
+  to z: cost=5, next_hop=z
+
+Routing table for x:
+  to u: cost=1, next_hop=u
+  to v: cost=2, next_hop=v
+  to w: cost=3, next_hop=w
+  to x: cost=0, next_hop=x
+  to y: cost=1, next_hop=y
+  to z: cost=3, next_hop=y
+
+Routing table for y:
+  to u: cost=2, next_hop=x
+  to v: cost=3, next_hop=x
+  to w: cost=4, next_hop=x
+  to x: cost=1, next_hop=x
+  to y: cost=0, next_hop=y
+  to z: cost=2, next_hop=z
+
+Routing table for z:
+  to u: cost=4, next_hop=y
+  to v: cost=5, next_hop=y
+  to w: cost=5, next_hop=w
+  to x: cost=3, next_hop=y
+  to y: cost=2, next_hop=y
+  to z: cost=0, next_hop=z
+
+All costs match Floyd-Warshall reference: True

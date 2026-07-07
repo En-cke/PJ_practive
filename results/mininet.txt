@@ -1,0 +1,30 @@
+=== Lab 9: Mininet dumbbell topology (10 Mbit/s bottleneck, 5ms link delay) ===
+Topology: h1,h2 -- s1 == s2 -- h3,h4  (s1-s2 is the bottleneck TCLink)
+
+Run (WSL2 Ubuntu 24.04, OVS 3.3.4, Mininet 2.3.0):
+    sudo systemctl start openvswitch-switch
+    sudo python3 topology.py --bw 10 --delay 5ms --json results.json
+
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4
+h2 -> h1 h3 h4
+h3 -> h1 h2 h4
+h4 -> h1 h2 h3
+*** Results: 0% dropped (12/12 received)
+
+{
+  "pingall_loss_pct": 0.0,
+  "iperf_mbit_per_sec": 8.395,
+  "iperf_raw_csv": "20260708071356,10.0.0.1,35806,10.0.0.3,5001,1,0.0-6.6,6946876,8394814",
+  "ping_h1_h3": [
+    "4 packets transmitted, 4 received, 0% packet loss, time 3098ms",
+    "rtt min/avg/max/mdev = 10.550/11.648/14.656/1.737 ms"
+  ]
+}
+
+Interpretation:
+- Full connectivity: every host reaches every other host (12/12, 0% loss).
+- Measured TCP throughput across the s1-s2 bottleneck = 8.40 Mbit/s, close to the
+  configured 10 Mbit/s cap (the gap is TCP/IP + Ethernet framing overhead).
+- Average RTT h1<->h3 = 11.6 ms, matching the two 5 ms TCLink delays (one per
+  direction crossed) plus queuing.

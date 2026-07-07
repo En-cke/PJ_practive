@@ -1,0 +1,17 @@
+PING 127.0.0.1 (127.0.0.1):
+reply from 127.0.0.1: icmp_seq=1 ttl=64 time=0.258 ms
+reply from 127.0.0.1: icmp_seq=2 ttl=64 time=0.185 ms
+reply from 127.0.0.1: icmp_seq=3 ttl=64 time=0.227 ms
+reply from 127.0.0.1: icmp_seq=4 ttl=64 time=0.206 ms
+
+--- 127.0.0.1 ping statistics ---
+4 packets transmitted, 4 received, 0.0% packet loss
+rtt min/avg/max = 0.185/0.219/0.258 ms
+PING 8.8.8.8 (8.8.8.8):
+reply from 8.8.8.8: icmp_seq=1 ttl=108 time=221.282 ms
+reply from 8.8.8.8: icmp_seq=2 ttl=108 time=229.799 ms
+reply from 8.8.8.8: icmp_seq=3 ttl=108 time=219.337 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0.0% packet loss
+rtt min/avg/max = 219.337/223.473/229.799 ms

@@ -1,0 +1,14 @@
+Reply from 127.0.0.1: seq=1 time=1.088 ms
+Reply from 127.0.0.1: seq=2 time=0.000 ms
+Reply from 127.0.0.1: seq=3 time=1.019 ms
+Reply from 127.0.0.1: seq=4 time=0.000 ms
+Reply from 127.0.0.1: seq=5 time=0.000 ms
+Reply from 127.0.0.1: seq=6 time=0.999 ms
+Request timed out: seq=7
+Request timed out: seq=8
+Reply from 127.0.0.1: seq=9 time=1.533 ms
+Reply from 127.0.0.1: seq=10 time=0.000 ms
+
+--- 127.0.0.1 ping statistics ---
+10 packets transmitted, 8 received, 20.0% packet loss
+rtt min/avg/max = 0.000/0.580/1.533 ms

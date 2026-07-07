@@ -1,0 +1,20 @@
+rdt3.0 (stop-and-wait)
+  channel: loss=0.25 corrupt=0.15 reorder=0.10
+  bytes to send : 1380
+  bytes received: 1380
+  correct       : True
+  fwd stats     : {'sent': 415, 'lost': 114, 'corrupted': 45, 'reordered': 30, 'delivered': 301}
+
+Go-Back-N (window=5)
+  channel: loss=0.25 corrupt=0.15 reorder=0.10
+  bytes to send : 1380
+  bytes received: 1380
+  correct       : True
+  fwd stats     : {'sent': 789, 'lost': 210, 'corrupted': 95, 'reordered': 52, 'delivered': 578}
+
+Selective Repeat (window=6)
+  channel: loss=0.25 corrupt=0.15 reorder=0.10
+  bytes to send : 1380
+  bytes received: 1380
+  correct       : True
+  fwd stats     : {'sent': 449, 'lost': 127, 'corrupted': 48, 'reordered': 28, 'delivered': 322}

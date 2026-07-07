@@ -1,0 +1,15 @@
+traceroute to 8.8.8.8 (8.8.8.8), 20 hops max:
+ 1  172.25.48.1  1.198 ms
+ 2  * (timeout)
+ 3  * (timeout)
+ 4  * (timeout)
+ 5  * (timeout)
+ 6  * (timeout)
+ 7  * (timeout)
+ 8  * (timeout)
+ 9  * (timeout)
+10  * (timeout)
+11  * (timeout)
+12  * (timeout)
+13  8.8.8.8  218.152 ms
+reached 8.8.8.8 in 13 hops

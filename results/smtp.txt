@@ -1,0 +1,27 @@
+=== SMTP session transcript ===
+
+S: 220 mock.smtp.local Simple Mail Transfer Service Ready
+C: HELO topdown.client
+S: 250 mock.smtp.local Hello
+C: MAIL FROM:<alice@example.com>
+S: 250 OK
+C: RCPT TO:<bob@example.com>
+S: 250 OK
+C: DATA
+S: 354 End data with <CR><LF>.<CR><LF>
+C: <message body>
+S: 250 OK: message accepted for delivery
+C: QUIT
+S: 221 mock.smtp.local closing connection
+[smtp-client] message sent successfully
+
+=== Message captured by server ===
+from: <alice@example.com>
+to: <bob@example.com>
+data:
+
+From: alice@example.com
+To: bob@example.com
+Subject: Top-Down Lab 3
+
+Hello from the SMTP lab.
