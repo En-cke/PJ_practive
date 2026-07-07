@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Lab runtime artifacts
+labs/04-http-proxy/cache/
+labs/04-http-proxy/cache_run/
+labs/04-http-proxy/cache_test/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

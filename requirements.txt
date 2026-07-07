@@ -1,0 +1,8 @@
+# The socket, RDT, and distance-vector labs use only the Python 3 standard
+# library (socket, struct, select, threading) — no third-party runtime deps.
+# The only external dependency is the test runner.
+pytest>=7.0
+
+# Optional, Linux-only, for Lab 9 (Mininet):
+#   sudo apt-get install -y mininet openvswitch-switch
+# Mininet is installed via the system package manager, not pip.
